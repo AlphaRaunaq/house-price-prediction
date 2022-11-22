@@ -54,8 +54,8 @@ def predict():
  
 
  
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port="8080")
+if __name__ == "__main__":
+  app.run(host="0.0.0.0", port="8080")
 
 
 
@@ -63,7 +63,6 @@ def predict():
 def base_static(filename):
     return send_from_directory(app.root_path + "../templates/static",filename)
      
-if __name__ == "__main__":
-    app.run(debug=True)
+
     
     
